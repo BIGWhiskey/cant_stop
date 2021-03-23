@@ -5,6 +5,7 @@
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cant_stop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/dowd_esmail" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/dowd_esmail_cant_stop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/cant_stop" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/src/dowd_esmail_cant_stop" vcs="Git" />
