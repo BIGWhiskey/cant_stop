@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.hpp
+iostream
+-
+
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
+enums.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
+iostream
+-
+
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
+
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/main.cpp
+iostream
+-
+fstream
+-
+Dice.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.hpp
+enums.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
+Player.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
+
