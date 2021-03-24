@@ -1,4 +1,5 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/cant_stop.dir/src/Board.cpp.o"
   "CMakeFiles/cant_stop.dir/src/Column.cpp.o"
   "CMakeFiles/cant_stop.dir/src/Dice.cpp.o"
   "CMakeFiles/cant_stop.dir/src/Game.cpp.o"

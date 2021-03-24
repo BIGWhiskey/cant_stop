@@ -2,7 +2,9 @@
 //  Column class for the can't stop project                       column.cpp
 //  Created by Chris Dowd and Eyad Esmail
 */
-#include "Column.hpp"
+
+
+#include "column.hpp"
 //startTower function to place a new tower
 bool Column::startTower(Player* p){
     int mylen = colLen[colNum];
@@ -22,15 +24,14 @@ bool Column::startTower(Player* p){
 // move function to advance the tower one square in the column
 bool Column::move(){
     int mylen = colLen[colNum];
+    if (cState != available){
+        return false;
+    }
     ++content[white];
     if (content[white] == mylen){
         cState = pending;
         return true;
-    }else if (cState != available){
-        return false;
-    }else{
-        return true;
-    }
+    }else {return true;}
 }
 //-----------------------------------------------------------------------------
 // stop function to end a turn
@@ -50,6 +51,18 @@ void Column::bust(){
 //-----------------------------------------------------------------------------
 // ostream function
 void Column::print(ostream& out) const {
-    //cout <<"Player::print called\n";
+    string outarr[5]{"-"};
+    out <<"Number \t State \t Content" << endl;
+    if(content[white] > 0) {outarr[white] = "T";};
+    if(content[orange] > 0) {outarr[orange] = "O";};
+    if(content[yellow] > 0) {outarr[yellow] = "Y";};
+    if(content[green] > 0) {outarr[green] = "G";};
+    if(content[blue] > 0) {outarr[blue] = "B";};
+    string mycontent;
+    for(int i=0;i<5;i++){
+        mycontent.append(outarr[i]);
+    }
+    out << colNum << "\t" << cState << "\t" << mycontent << endl;
+
 
 }

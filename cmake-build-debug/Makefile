@@ -143,6 +143,33 @@ cant_stop/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/build
 .PHONY : cant_stop/fast
 
+src/Board.o: src/Board.cpp.o
+
+.PHONY : src/Board.o
+
+# target to build an object file
+src/Board.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Board.cpp.o
+.PHONY : src/Board.cpp.o
+
+src/Board.i: src/Board.cpp.i
+
+.PHONY : src/Board.i
+
+# target to preprocess a source file
+src/Board.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Board.cpp.i
+.PHONY : src/Board.cpp.i
+
+src/Board.s: src/Board.cpp.s
+
+.PHONY : src/Board.s
+
+# target to generate assembly for a file
+src/Board.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Board.cpp.s
+.PHONY : src/Board.cpp.s
+
 src/Column.o: src/Column.cpp.o
 
 .PHONY : src/Column.o
@@ -341,6 +368,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... cant_stop"
+	@echo "... src/Board.o"
+	@echo "... src/Board.i"
+	@echo "... src/Board.s"
 	@echo "... src/Column.o"
 	@echo "... src/Column.i"
 	@echo "... src/Column.s"

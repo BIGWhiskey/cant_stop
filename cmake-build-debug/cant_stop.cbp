@@ -80,6 +80,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.cpp">
+			<Option target="cant_stop"/>
+		</Unit>
+		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.h">
+			<Option target="cant_stop"/>
+		</Unit>
 		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.cpp">
 			<Option target="cant_stop"/>
 		</Unit>
