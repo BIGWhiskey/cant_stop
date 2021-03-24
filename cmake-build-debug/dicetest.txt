@@ -49,3 +49,9 @@ Dice 1 = 2
 Dice 2 = 1
 Dice 3 = 3
 Dice 4 = 3
+-------------------------------------------
+Dice Created: 4
+Dice 1 = 2
+Dice 2 = 6
+Dice 3 = 5
+Dice 4 = 5

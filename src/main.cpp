@@ -3,6 +3,7 @@
 #include "Dice.hpp"
 #include "enums.hpp"
 #include "Player.hpp"
+#include "Board.hpp"
 #define NUM_DICE 4
 using namespace std;
 void
@@ -71,7 +72,8 @@ main() {
     string p1Name = "chris";
     colorEnum p1Color = orange;
     Player p1(p1Name, p1Color);
-    unitDice();
-    unitPlayer();
+    //unitDice();
+    //unitPlayer();
+    Board b;
     return 0;
 }

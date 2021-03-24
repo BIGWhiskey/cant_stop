@@ -20,9 +20,9 @@ private:
     int content[5]{0};
 
 public:
+    Column();
     Column(int colNum): colNum (colNum){}
     ~Column() { cout <<"Column default constructor called\n"; }   //Destructor
-
     State getState(){return cState;}
     void print( ostream& out) const;
     bool move();

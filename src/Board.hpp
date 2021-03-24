@@ -5,14 +5,16 @@
 #ifndef CANT_STOP_BOARD_HPP
 #define CANT_STOP_BOARD_HPP
 #include "Player.hpp"
+#include "Column.hpp"
 
 class Board {
 private:
     int counter = 0;
     int numTowers[3];
+    Column* backBone[13];
 public:
     Board();
-    ~Board() = default;
+    ~Board();
     void startTurn( Player* );
     bool move ( int column );
     void stop();

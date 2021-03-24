@@ -83,7 +83,7 @@
 		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.cpp">
 			<Option target="cant_stop"/>
 		</Unit>
-		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.h">
+		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.hpp">
 			<Option target="cant_stop"/>
 		</Unit>
 		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.cpp">

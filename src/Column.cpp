@@ -5,6 +5,7 @@
 
 
 #include "column.hpp"
+
 //startTower function to place a new tower
 bool Column::startTower(Player* p){
     int mylen = colLen[colNum];
@@ -23,12 +24,12 @@ bool Column::startTower(Player* p){
 //-----------------------------------------------------------------------------
 // move function to advance the tower one square in the column
 bool Column::move(){
-    int mylen = colLen[colNum];
+    int myLen = colLen[colNum];
     if (cState != available){
         return false;
     }
     ++content[white];
-    if (content[white] == mylen){
+    if (content[white] == myLen){
         cState = pending;
         return true;
     }else {return true;}
@@ -63,6 +64,6 @@ void Column::print(ostream& out) const {
         mycontent.append(outarr[i]);
     }
     out << colNum << "\t" << cState << "\t" << mycontent << endl;
-
-
 }
+//Default constructor
+Column::Column(){}
