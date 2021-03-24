@@ -4,7 +4,8 @@
 
 #include "Board.hpp"
 Board::Board(){}
-void Board::startTurn(Player *) {}
+void Board::startTurn( Player * ) {}
 bool Board::move( int column ){}
 void Board::stop() {}
 void Board::bust() {}
+void Board::print(ostream &out) const {}

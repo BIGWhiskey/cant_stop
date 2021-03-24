@@ -17,7 +17,12 @@ public:
     bool move ( int column );
     void stop();
     void bust();
+    void print( ostream& out) const;
 };
+inline ostream& operator << (ostream& out, Board& b){
+    b.print(out);
+    return out;
+}
 
 
 #endif //CANT_STOP_BOARD_HPP
