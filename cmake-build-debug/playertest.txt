@@ -58,3 +58,23 @@ Chris    green      3
 --------------------------------
 -        TEST COMPLETE         -
 --------------------------------
+
+--------------------------------
+-        TEST STARTED          -
+--------------------------------
+// Player created
+Name    Color     Score
+Chris    yellow     0
+// test player getcolor 
+Color: yellow
+// test won column: 
+// test get score, should be 1
+score: 1
+// test winning, assign 3 scores
+player won
+// print player after testing
+Name    Color     Score
+Chris    yellow     3
+--------------------------------
+-        TEST COMPLETE         -
+--------------------------------

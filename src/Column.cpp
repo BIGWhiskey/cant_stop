@@ -5,31 +5,34 @@
 
 
 #include "column.hpp"
-
 //startTower function to place a new tower
 bool Column::startTower(Player* p){
-    int mylen = colLen[colNum];
-    if(cState != available){
+    colorEnum pcolor = p -> getColor();
+    if(cState == captured){
         return false;
-    }else if (content[white] == 0){
+    }else if (content[white] == 0 && content[pcolor]==0){
         content[white] = 1;
         return true;
     }else{
-        ++content[white];
-        if (content[white] == mylen){
+        content[white] = content[pcolor] + 1;
+        if (content[white] == mySize){
             cState = pending;
         }
+        return true;
     }
 }
 //-----------------------------------------------------------------------------
 // move function to advance the tower one square in the column
 bool Column::move(){
-    int myLen = colLen[colNum];
-    if (cState != available){
+    if (cState == captured){
+        return false;
+    }
+    if (content[white] == 0){
+        cout << "No Tower to move. Start Tower First."<< endl;
         return false;
     }
     ++content[white];
-    if (content[white] == myLen){
+    if (content[white] == mySize){
         cState = pending;
         return true;
     }else {return true;}
@@ -41,29 +44,31 @@ void Column::stop(Player* p){
     content[pcol] = content[white];
     content[white] = 0;
     if (cState == pending){
-        cState == captured;
+        cState = captured;
         p -> wonColumn(colNum);
     }
 }
 //-----------------------------------------------------------------------------
 void Column::bust(){
-    //left empty to be implemented later
+    //left empty to be implemented later according to p3 instructions
 };
 //-----------------------------------------------------------------------------
 // ostream function
 void Column::print(ostream& out) const {
-    string outarr[5]{"-"};
-    out <<"Number \t State \t Content" << endl;
-    if(content[white] > 0) {outarr[white] = "T";};
-    if(content[orange] > 0) {outarr[orange] = "O";};
-    if(content[yellow] > 0) {outarr[yellow] = "Y";};
-    if(content[green] > 0) {outarr[green] = "G";};
-    if(content[blue] > 0) {outarr[blue] = "B";};
     string mycontent;
-    for(int i=0;i<5;i++){
-        mycontent.append(outarr[i]);
+    for(int j = 1;j<= mySize;j++ ){
+        string outarr[5]{"-"};
+        if(content[white]  == j) {outarr[white]  = "T";}else{outarr[white]  = "-";};
+        if(content[orange] == j) {outarr[orange] = "O";}else{outarr[orange] = "-";};
+        if(content[yellow] == j) {outarr[yellow] = "Y";}else{outarr[yellow] = "-";};
+        if(content[green]  == j) {outarr[green]  = "G";}else{outarr[green]  = "-";};
+        if(content[blue]   == j) {outarr[blue]   = "B";}else{outarr[blue]   = "-";};
+        string squarecontent;
+        for(int i=0;i<5;i++){
+            squarecontent.append(outarr[i]);
+        }
+        mycontent.append(" | ");
+        mycontent.append(squarecontent);
     }
-    out << colNum << "\t" << cState << "\t" << mycontent << endl;
+    out << "Column:" << colNum << ", State:" << myStates[cState] << ", Squares:" << mycontent << endl;
 }
-//Default constructor
-Column::Column(){}

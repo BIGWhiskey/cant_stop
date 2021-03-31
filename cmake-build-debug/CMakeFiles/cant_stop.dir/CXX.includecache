@@ -62,21 +62,25 @@ enums.hpp
 player.hpp
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
 
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/dice.hpp
+iostream
+-
+
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
 
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/main.cpp
 iostream
 -
-fstream
--
-Dice.hpp
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.hpp
+dice.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/dice.hpp
+tools.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
 enums.hpp
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
-Player.hpp
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
-Board.hpp
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.hpp
+player.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
+column.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/column.hpp
 
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
 enums.hpp

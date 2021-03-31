@@ -34,10 +34,8 @@ CMakeFiles/cant_stop.dir/src/Player.cpp.o: ../src/enums.hpp
 CMakeFiles/cant_stop.dir/src/enums.cpp.o: ../src/enums.cpp
 CMakeFiles/cant_stop.dir/src/enums.cpp.o: ../src/enums.hpp
 
-CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/Board.hpp
-CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/Column.hpp
-CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/Dice.hpp
-CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/Player.hpp
+CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/column.hpp
+CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/dice.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/enums.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/player.hpp

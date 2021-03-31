@@ -1,39 +1,43 @@
+/*  ---------------------------------------------------------------------------
+//  Main program for the can't stop project                         main.cpp
+//  Created by Chris Dowd and Eyad Esmail 
+*/
+
 #include <iostream>
-#include <fstream>
-#include "Dice.hpp"
+#include "dice.hpp"
+#include "tools.hpp"
 #include "enums.hpp"
-#include "Player.hpp"
-#include "Board.hpp"
+#include "player.hpp"
+#include "column.hpp"
 #define NUM_DICE 4
-using namespace std;
-void
-unitDice(){    // dice testing function
-    ofstream diceFile;
-    diceFile.open("diceTest.txt", ios_base::app); // file output with append mode
+
+
+void unitDice(){    // dice testing function 
+    ofstream dicefile;
+    dicefile.open("dicetest.txt", ios_base::app); // file output with append mode
     Dice d(NUM_DICE);
-    if ( diceFile.is_open()){   // checking if file
-        // is opened
-        diceFile << "-------------------------------------------" << endl;
-        diceFile << "Dice Created: " << NUM_DICE << endl;
-        d.print(diceFile);} // output to file
+    if ( dicefile.is_open()){   // checking if file is opened 
+        dicefile << "-------------------------------------------" << endl;
+        dicefile << "Dice Created: " << NUM_DICE << endl;
+        d.print(dicefile);} // output to file
     else{cout << "can not open file"<< endl; }
     d.print(cout); // output to console
-    diceFile.close();}
+    dicefile.close();}
 //-----------------------------------------------------------------------------
-void
-unitPlayer(){
-    ofstream playerFile;
-    playerFile.open("playertest.txt", ios_base::app);
-    if ( !playerFile.is_open()){ cout << "can not open file" << endl;}
+
+void unitPlayer(){
+    ofstream playerfile;
+    playerfile.open("playertest.txt", ios_base::app);
+    if ( !playerfile.is_open()){ cout << "can not open file" << endl;}
     cout << "Enter player name: " << endl;
     string pname;
-    char colorChoice;
+    char colorchoice;
     cin >> pname;
     cout << "Choose a color: " << endl;
-    cout << "o: Orange" << "\n" << "y: Yellow" << "\n" << "g: Green" <<"\n" << "b: Blue" << endl;
-    cin >> colorChoice;
+    cout << "o: Orange" << "\n" << "y: Yellow" << "\n" << "g: Green" << "\n" << "b: Blue" << endl;
+    cin >> colorchoice;
     colorEnum tempcolor;
-    switch(colorChoice){
+    switch(colorchoice){
         case 'o': tempcolor = orange; break;
         case 'y': tempcolor = yellow; break;
         case 'g': tempcolor = green;  break;
@@ -43,37 +47,59 @@ unitPlayer(){
     }
     Player p(pname,tempcolor);
     //cout<< "player created" << endl;
-    playerFile << "\n--------------------------------" << endl;
-    playerFile << "-        TEST STARTED          -" << endl;
-    playerFile << "--------------------------------" << endl;
+    playerfile << "\n--------------------------------" << endl;
+    playerfile << "-        TEST STARTED          -" << endl;
+    playerfile << "--------------------------------" << endl;
 
-    playerFile << "// Player created" << endl;
-    p.print(playerFile);
-    playerFile << "// test player getcolor "<< endl;
-    playerFile << "Color: " << colors[p.getColor()] << endl;
-    playerFile << "// test won column: " << endl;
+    playerfile << "// Player created" << endl;
+    p.print(playerfile);
+    playerfile << "// test player getcolor "<< endl;
+    playerfile << "Color: " << colors[p.getColor()] << endl;
+    playerfile << "// test won column: " << endl;
     p.wonColumn(1);
-    playerFile << "// test get score, should be 1" << endl;
-    playerFile << "score: " << p.getScore() << endl;
-    playerFile << "// test winning, assign 3 scores"<< endl;
+    playerfile << "// test get score, should be 1" << endl;
+    playerfile << "score: " << p.getScore() << endl;
+    playerfile << "// test winning, assign 3 scores"<< endl;
     p.wonColumn(2);
     //p.wonColumn(3);
-    if ( p.wonColumn(3)) { playerFile << "player won"<< endl;}
-    playerFile << "// print player after testing" << endl;
-    p.print(playerFile);
+    if ( p.wonColumn(3)) { playerfile << "player won"<< endl;}
+    playerfile << "// print player after testing" << endl;
+    p.print(playerfile);
 
-    playerFile << "--------------------------------" << endl;
-    playerFile << "-        TEST COMPLETE         -" << endl;
-    playerFile << "--------------------------------" << endl;
-    playerFile.close();
+    playerfile << "--------------------------------" << endl;
+    playerfile << "-        TEST COMPLETE         -" << endl;
+    playerfile << "--------------------------------" << endl;
+    playerfile.close();
 }
-int
-main() {
-    string p1Name = "chris";
-    colorEnum p1Color = orange;
-    Player p1(p1Name, p1Color);
+//-----------------------------------------------------------------------------
+void unitColumn(){
+    Column c(4);
+    Column b(2);
+    Player* p = new Player("player",orange);
+    Player* x = new Player("playerx",blue);
+    c.startTower(p);
+    c.print(cout);
+    c.move();
+    c.print(cout);
+    c.stop(p);
+    c.print(cout);
+    b.startTower(x);
+    b.print(cout);
+    b.stop(x);
+    b.print(cout);
+    b.startTower(x);
+    b.print(cout);
+    b.move();
+    b.print(cout);
+    b.stop(x);
+    b.print(cout);
+}
+//-----------------------------------------------------------------------------
+int main(int argc, char* argv[]) {
+    banner();
+    unitColumn();
     //unitDice();
     //unitPlayer();
-    Board b;
+    bye();
     return 0;
 }

@@ -35,10 +35,8 @@ CMakeFiles/cant_stop.dir/src/enums.cpp.o
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.cpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/column.hpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/dice.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/main.cpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp

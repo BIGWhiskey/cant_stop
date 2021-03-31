@@ -9,7 +9,7 @@ Board::Board(){
         backBone[j] = new Column(j);
     }
     for( int j = 0; j < 13; j++){
-        backBone[j] = new Column();
+        backBone[j] = new Column(j);
         cout <<"backBone " <<j <<"\n" <<*backBone[j] << "\n";
     }
 }

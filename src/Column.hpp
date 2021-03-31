@@ -16,18 +16,19 @@ private:
 
     static constexpr int colLen[13]{0,0,3,5,7,9,11,13,11,9,7,5,3};
     int colNum;
-    State cState;
+    int mySize = colLen[colNum];
+    State cState = available;
     int content[5]{0};
 
 public:
-    Column();
     Column(int colNum): colNum (colNum){}
     ~Column() { cout <<"Column default constructor called\n"; }   //Destructor
+
     State getState(){return cState;}
     void print( ostream& out) const;
     bool move();
-    bool startTower(Player*);
-    void stop(Player*);
+    bool startTower(Player* p);
+    void stop(Player* p);
     void bust();
 };
 inline ostream& operator << (ostream& out, Column& c){
