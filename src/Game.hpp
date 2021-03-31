@@ -3,7 +3,7 @@
 //
 
 #include "Dice.hpp"
-#include "enums.hpp"
+#include "Enums.hpp"
 #include "Column.hpp"
 #include "Player.hpp"
 class Game {

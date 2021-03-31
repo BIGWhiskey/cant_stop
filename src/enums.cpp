@@ -4,5 +4,5 @@
 //  Created on 2/8/2021
 */
 
-#include "enums.hpp"
-extern const char* colors[5] = {"ERROR ", "orange", "yellow", "green ", "blue  "};
+#include "Enums.hpp"
+extern const char* colors[5] = {"ERROR ", "orange", "yellow", "green ", "blue "};

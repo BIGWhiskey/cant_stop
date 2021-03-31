@@ -6,11 +6,10 @@
 #include <iostream>
 #include "dice.hpp"
 #include "tools.hpp"
-#include "enums.hpp"
+#include "Enums.hpp"
 #include "player.hpp"
 #include "column.hpp"
 #define NUM_DICE 4
-
 
 void unitDice(){    // dice testing function 
     ofstream dicefile;

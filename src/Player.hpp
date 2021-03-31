@@ -5,7 +5,7 @@
 */
 #ifndef CANTSTOP_PLAYER_HPP
 #define CANTSTOP_PLAYER_HPP
-#include "enums.hpp"
+#include "Enums.hpp"
 #include <iostream>
 using namespace std;
 class Player {

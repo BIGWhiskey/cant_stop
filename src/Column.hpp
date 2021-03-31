@@ -5,8 +5,8 @@
 #ifndef CANTSTOP_COLUMN_H
 #define CANTSTOP_COLUMN_H
 #include "tools.hpp"
-#include "enums.hpp"
-#include "player.hpp"
+#include "Enums.hpp"
+#include "Player.hpp"
 
 enum State {available, pending, captured };
 const string myStates[] = {"Available","Pending", "Captured"};

@@ -103,18 +103,18 @@ CMakeFiles/cant_stop.dir/src/Dice.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cant_stop.dir/src/Dice.cpp.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.cpp -o CMakeFiles/cant_stop.dir/src/Dice.cpp.s
 
-CMakeFiles/cant_stop.dir/src/enums.cpp.o: CMakeFiles/cant_stop.dir/flags.make
-CMakeFiles/cant_stop.dir/src/enums.cpp.o: ../src/enums.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cant_stop.dir/src/enums.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cant_stop.dir/src/enums.cpp.o -c /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.cpp
+CMakeFiles/cant_stop.dir/src/Enums.cpp.o: CMakeFiles/cant_stop.dir/flags.make
+CMakeFiles/cant_stop.dir/src/Enums.cpp.o: ../src/Enums.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/cant_stop.dir/src/Enums.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/cant_stop.dir/src/Enums.cpp.o -c /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.cpp
 
-CMakeFiles/cant_stop.dir/src/enums.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cant_stop.dir/src/enums.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.cpp > CMakeFiles/cant_stop.dir/src/enums.cpp.i
+CMakeFiles/cant_stop.dir/src/Enums.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/cant_stop.dir/src/Enums.cpp.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.cpp > CMakeFiles/cant_stop.dir/src/Enums.cpp.i
 
-CMakeFiles/cant_stop.dir/src/enums.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cant_stop.dir/src/enums.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.cpp -o CMakeFiles/cant_stop.dir/src/enums.cpp.s
+CMakeFiles/cant_stop.dir/src/Enums.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/cant_stop.dir/src/Enums.cpp.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.cpp -o CMakeFiles/cant_stop.dir/src/Enums.cpp.s
 
 CMakeFiles/cant_stop.dir/src/Column.cpp.o: CMakeFiles/cant_stop.dir/flags.make
 CMakeFiles/cant_stop.dir/src/Column.cpp.o: ../src/Column.cpp
@@ -185,7 +185,7 @@ CMakeFiles/cant_stop.dir/src/Board.cpp.s: cmake_force
 cant_stop_OBJECTS = \
 "CMakeFiles/cant_stop.dir/src/main.cpp.o" \
 "CMakeFiles/cant_stop.dir/src/Dice.cpp.o" \
-"CMakeFiles/cant_stop.dir/src/enums.cpp.o" \
+"CMakeFiles/cant_stop.dir/src/Enums.cpp.o" \
 "CMakeFiles/cant_stop.dir/src/Column.cpp.o" \
 "CMakeFiles/cant_stop.dir/src/Player.cpp.o" \
 "CMakeFiles/cant_stop.dir/src/Game.cpp.o" \
@@ -197,7 +197,7 @@ cant_stop_EXTERNAL_OBJECTS =
 
 cant_stop: CMakeFiles/cant_stop.dir/src/main.cpp.o
 cant_stop: CMakeFiles/cant_stop.dir/src/Dice.cpp.o
-cant_stop: CMakeFiles/cant_stop.dir/src/enums.cpp.o
+cant_stop: CMakeFiles/cant_stop.dir/src/Enums.cpp.o
 cant_stop: CMakeFiles/cant_stop.dir/src/Column.cpp.o
 cant_stop: CMakeFiles/cant_stop.dir/src/Player.cpp.o
 cant_stop: CMakeFiles/cant_stop.dir/src/Game.cpp.o

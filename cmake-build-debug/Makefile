@@ -224,6 +224,33 @@ src/Dice.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Dice.cpp.s
 .PHONY : src/Dice.cpp.s
 
+src/Enums.o: src/Enums.cpp.o
+
+.PHONY : src/Enums.o
+
+# target to build an object file
+src/Enums.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Enums.cpp.o
+.PHONY : src/Enums.cpp.o
+
+src/Enums.i: src/Enums.cpp.i
+
+.PHONY : src/Enums.i
+
+# target to preprocess a source file
+src/Enums.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Enums.cpp.i
+.PHONY : src/Enums.cpp.i
+
+src/Enums.s: src/Enums.cpp.s
+
+.PHONY : src/Enums.s
+
+# target to generate assembly for a file
+src/Enums.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Enums.cpp.s
+.PHONY : src/Enums.cpp.s
+
 src/Game.o: src/Game.cpp.o
 
 .PHONY : src/Game.o
@@ -277,33 +304,6 @@ src/Player.s: src/Player.cpp.s
 src/Player.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/Player.cpp.s
 .PHONY : src/Player.cpp.s
-
-src/enums.o: src/enums.cpp.o
-
-.PHONY : src/enums.o
-
-# target to build an object file
-src/enums.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/enums.cpp.o
-.PHONY : src/enums.cpp.o
-
-src/enums.i: src/enums.cpp.i
-
-.PHONY : src/enums.i
-
-# target to preprocess a source file
-src/enums.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/enums.cpp.i
-.PHONY : src/enums.cpp.i
-
-src/enums.s: src/enums.cpp.s
-
-.PHONY : src/enums.s
-
-# target to generate assembly for a file
-src/enums.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/cant_stop.dir/build.make CMakeFiles/cant_stop.dir/src/enums.cpp.s
-.PHONY : src/enums.cpp.s
 
 src/main.o: src/main.cpp.o
 
@@ -377,15 +377,15 @@ help:
 	@echo "... src/Dice.o"
 	@echo "... src/Dice.i"
 	@echo "... src/Dice.s"
+	@echo "... src/Enums.o"
+	@echo "... src/Enums.i"
+	@echo "... src/Enums.s"
 	@echo "... src/Game.o"
 	@echo "... src/Game.i"
 	@echo "... src/Game.s"
 	@echo "... src/Player.o"
 	@echo "... src/Player.i"
 	@echo "... src/Player.s"
-	@echo "... src/enums.o"
-	@echo "... src/enums.i"
-	@echo "... src/enums.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

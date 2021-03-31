@@ -9,9 +9,10 @@
 
 class Board {
 private:
-    int counter = 0;
-    int numTowers[3];
+    int towerCounter = 0;
+    int towerColumn[3];
     Column* backBone[13];
+    Player* currentPlayer;
 public:
     Board();
     ~Board();

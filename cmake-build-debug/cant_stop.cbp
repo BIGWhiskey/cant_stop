@@ -98,6 +98,12 @@
 		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.hpp">
 			<Option target="cant_stop"/>
 		</Unit>
+		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.cpp">
+			<Option target="cant_stop"/>
+		</Unit>
+		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp">
+			<Option target="cant_stop"/>
+		</Unit>
 		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Game.cpp">
 			<Option target="cant_stop"/>
 		</Unit>
@@ -108,12 +114,6 @@
 			<Option target="cant_stop"/>
 		</Unit>
 		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp">
-			<Option target="cant_stop"/>
-		</Unit>
-		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.cpp">
-			<Option target="cant_stop"/>
-		</Unit>
-		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp">
 			<Option target="cant_stop"/>
 		</Unit>
 		<Unit filename="/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/main.cpp">

@@ -5,39 +5,38 @@ CMakeFiles/cant_stop.dir/src/Board.cpp.o
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.cpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.hpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
 CMakeFiles/cant_stop.dir/src/Column.cpp.o
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.cpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/column.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
 CMakeFiles/cant_stop.dir/src/Dice.cpp.o
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.cpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.hpp
+CMakeFiles/cant_stop.dir/src/Enums.cpp.o
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.cpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
 CMakeFiles/cant_stop.dir/src/Game.cpp.o
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Dice.hpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Game.cpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Game.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
 CMakeFiles/cant_stop.dir/src/Player.cpp.o
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.cpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
-CMakeFiles/cant_stop.dir/src/enums.cpp.o
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.cpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
+ /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/column.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/dice.hpp
- /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/main.cpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
  /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
