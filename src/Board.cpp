@@ -26,6 +26,7 @@ bool Board::move( int column ){
         //place tower in column ( slot 1 ) return true and
         Column c(column);
         c.startTower(currentPlayer);
+        return true;
     }
 }
 void Board::stop() {}
