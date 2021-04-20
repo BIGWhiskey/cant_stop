@@ -1,6 +1,6 @@
 /*  ---------------------------------------------------------------------------
 //  Main program for the can't stop project                         main.cpp
-//  Created by Chris Dowd and Eyad Esmail 
+//  Created by Chris Dowd and Eyad Esmail
 */
 
 #include <iostream>

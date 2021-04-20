@@ -5,8 +5,8 @@
 #ifndef CANTSTOP_COLUMN_H
 #define CANTSTOP_COLUMN_H
 #include "tools.hpp"
-#include "Enums.hpp"
-#include "Player.hpp"
+#include "enums.hpp"
+#include "player.hpp"
 
 enum State {available, pending, captured };
 const string myStates[] = {"Available","Pending", "Captured"};
@@ -21,10 +21,11 @@ private:
     int content[5]{0};
 
 public:
-    Column(int colNum): colNum (colNum){ cout <<"Column constructor\n";}
-    ~Column() { cout <<"Column destructor\n"; }   //Destructor
+    Column(int colNum): colNum (colNum){}
+    ~Column() { cout <<"Column default constructor called\n"; }   //Destructor
 
     State getState(){return cState;}
+    int* getContent(){return content;}
     void print( ostream& out) const;
     bool move();
     bool startTower(Player* p);

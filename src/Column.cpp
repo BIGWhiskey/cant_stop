@@ -7,14 +7,14 @@
 #include "column.hpp"
 //startTower function to place a new tower
 bool Column::startTower(Player* p){
-    colorEnum pColor = p -> getColor();
+    colorEnum pcolor = p -> getColor();
     if(cState == captured){
         return false;
-    }else if (content[white] == 0 && content[pColor] == 0){
+    }else if (content[white] == 0 && content[pcolor]==0){
         content[white] = 1;
         return true;
     }else{
-        content[white] = content[pColor] + 1;
+        content[white] = content[pcolor] + 1;
         if (content[white] == mySize){
             cState = pending;
         }
@@ -40,8 +40,8 @@ bool Column::move(){
 //-----------------------------------------------------------------------------
 // stop function to end a turn
 void Column::stop(Player* p){
-    colorEnum pCol = p-> getColor();
-    content[pCol] = content[white];
+    colorEnum pcol = p-> getColor();
+    content[pcol] = content[white];
     content[white] = 0;
     if (cState == pending){
         cState = captured;
@@ -50,25 +50,25 @@ void Column::stop(Player* p){
 }
 //-----------------------------------------------------------------------------
 void Column::bust(){
-    //left empty to be implemented later according to p3 instructions
+    content[white] = 0;
 };
 //-----------------------------------------------------------------------------
 // ostream function
 void Column::print(ostream& out) const {
-    string myContent;
+    string mycontent;
     for(int j = 1;j<= mySize;j++ ){
-        string outArr[5]{"-"};
-        if(content[white]  == j) { outArr[white]  = "T";}else{ outArr[white]  = "-";};
-        if(content[orange] == j) { outArr[orange] = "O";}else{ outArr[orange] = "-";};
-        if(content[yellow] == j) { outArr[yellow] = "Y";}else{ outArr[yellow] = "-";};
-        if(content[green]  == j) { outArr[green]  = "G";}else{ outArr[green]  = "-";};
-        if(content[blue]   == j) { outArr[blue]   = "B";}else{ outArr[blue]   = "-";};
-        string squareContent;
+        string outarr[5]{"-"};
+        if(content[white]  == j) {outarr[white]  = "T";}else{outarr[white]  = "-";};
+        if(content[orange] == j) {outarr[orange] = "O";}else{outarr[orange] = "-";};
+        if(content[yellow] == j) {outarr[yellow] = "Y";}else{outarr[yellow] = "-";};
+        if(content[green]  == j) {outarr[green]  = "G";}else{outarr[green]  = "-";};
+        if(content[blue]   == j) {outarr[blue]   = "B";}else{outarr[blue]   = "-";};
+        string squarecontent;
         for(int i=0;i<5;i++){
-            squareContent.append(outArr[i]);
+            squarecontent.append(outarr[i]);
         }
-        myContent.append(" | ");
-        myContent.append(squareContent);
+        mycontent.append(" | ");
+        mycontent.append(squarecontent);
     }
-    out << "Column:" << colNum << ", State:" << myStates[cState] << ", Squares:" << myContent << endl;
+    out << "Column:" << colNum << ", State:" << myStates[cState] << ", Squares:" << mycontent << endl;
 }
