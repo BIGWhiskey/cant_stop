@@ -1,6 +1,6 @@
 /*  ----------------------------------------------------------------------------
 //  Dice Header file                          Dice.hpp
-//  Created by Chris Dowd and Eyad Esmail
+//  Created by Chris Dowd and Eyad Esmail 
 //  Created on 1/21/2021
 */
 
@@ -9,6 +9,8 @@
 
 #pragma once
 #include "tools.hpp"
+
+
 class Dice {
 private:
     int numDice = 0;

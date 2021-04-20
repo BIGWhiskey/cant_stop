@@ -1,6 +1,6 @@
 /*  ----------------------------------------------------------------------------
 //  Dice Class file                          Dice.cpp
-//  Created by Chris Dowd and Eyad Esmail
+//  Created by Chris Dowd and Eyad Esmail 
 //  Created on 1/21/2021
 */
 
@@ -10,6 +10,7 @@ Dice::Dice() {}
 
 //Constructor to create random numbers and call Dice::roll()
 Dice::Dice( int n ) {
+    cout <<n <<" Dice created!\n";
     this->numDice = n;
     diceValue = new int[ n ]; //pseudo-random values
     srand(time( NULL )); //create seed for rand()
@@ -22,14 +23,15 @@ Dice::~Dice() {
 }
 //Roll dice generating pseudo-random values for each roll
 const int* Dice::roll() {
+    cout <<"Dice::roll() called\n";
     for( int j = 1; j <= numDice; j++ ) {
-        diceValue[ j ] = rand() % 6 + 1;
+        diceValue[ j ] = rand() % 6 + 1; 
     }
     return diceValue;
 }
-// ostream function
+// ostream function 
 void Dice::print(ostream& out) const {
-    for (int j=1; j <= numDice; j++ ){ // printing dice output
+    for (int j=1; j <= numDice; j++ ){ // printing dice output 
         out <<"Dice " <<j <<" = " <<diceValue[j] <<endl;
     }
 }

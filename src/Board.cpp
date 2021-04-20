@@ -1,38 +1,58 @@
-//
-// Created by Christopher Dowd on 3/23/21.
-//
-#include "Board.hpp"
-#include "Column.hpp"
+/*  ----------------------------------------------------------------------------
+//  Board Class file                          board.cpp
+//  Created by Chris Dowd and Eyad Esmail 
+//  Created on 4/19/2021
+*/
 
+#include "board.hpp"
 Board::Board(){
-    cout <<"Board Constructor\n";
-   for( int j = 0; j < 13; j++){
-       if( j < 2){ backBone[j] = new Column (0); } else
-      backBone[j] = new Column(j);
+    for( int j = 0; j < 13; j++){
+        if( j < 2){ backBone[j] = NULL; } else
+        backBone[j] = new Column(j);
     }
 }
-Board::~Board() { delete [] backBone[13]; }
-
-void Board::startTurn( Player * ) {
+//-----------------------------------------------------------------------------
+void Board::startTurn( Player* p) {
+    currentPlayer = p;
     towerCounter = 0;
-    for( auto i : towerColumn ){ towerColumn[i] = 0; }  //set all tower columns to 0
+    for( int n = 0; n < 2 ; n++  ){ 
+        towerColumn[n] = 0; 
+    }  //set all tower columns to 0
 }
+//-----------------------------------------------------------------------------
 bool Board::move( int column ){
-    if ( column == pending || column == captured ){
+    State cstate = backBone[column]-> getState();
+    bool containsTower = backBone[column]->getContent()[0];
+    if (cstate != available || (towerCounter >= 2 && !containsTower)){
         return false;
     }else {
-        //place tower in column ( slot 1 ) return true and
-        Column c(column);
-        c.startTower(currentPlayer);
+        //if no tower, create tower
+        if (!containsTower){
+            backBone[column]->startTower(currentPlayer);
+            
+            towerColumn[towerCounter]=column;
+            towerCounter++;
+        }else{ //if there is tower, move tower
+            backBone[column]->move();
+        }
         return true;
     }
 }
-void Board::stop() {
-
+//-----------------------------------------------------------------------------
+void Board::stop(){
+    for( int n = 0; n < 2 ; n++  ){ 
+        backBone[towerColumn[n]]->stop(currentPlayer); 
+    }  
 }
+//-----------------------------------------------------------------------------
 void Board::bust() {
-
+    for( int n = 0; n < 2 ; n++  ){ 
+        backBone[towerColumn[n]]->bust(); 
+    }  
 }
+//-----------------------------------------------------------------------------
 void Board::print(ostream &out) const {
-    cout <<"Board::Print()\n";
+    for (int n = 2; n < 13 ; n++ ){
+        backBone[n]->print(out);
+    }
 }
