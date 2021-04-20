@@ -4,6 +4,7 @@
 //  Assorted utility routines for use in C programs.
 //  - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
 #include "tools.hpp"
+
 // ---------------------------------------------------------------------------
 // I/O Manipulators. ---------------------------------------------------------
 // ---------------------------------------------------------------------------
@@ -41,10 +42,10 @@ void bye( void ) { cerr << "\nNormal termination.\n" ; }
 void
 hold( void )
 {
-    cerr << endl << endl << " Press 'Enter' to continue...";
-    cin >> flush;
-    cin.get();
-    cin >> flush;
+     cerr << endl << endl << " Press 'Enter' to continue...";
+     cin >> flush;
+     cin.get();
+     cin >> flush;
 }
 
 // ----------------------------------------------------------------------------
@@ -63,7 +64,7 @@ fatal (const char* format, ...)
     fprintf(stderr, "\n");
     fputs( "\n Error exit; press '.' and 'Enter' to continue", stderr );
     while (getchar() != '.')  // tight loop  ;
-        exit(1);
+    exit(1);
 }
 
 // ----------------------------------------------------------------------------

@@ -1,23 +1,24 @@
 /*  ----------------------------------------------------------------------------
 //  Player header file                          player.hpp
-//  Created by Chris Dowd and Eyad Esmail
+//  Created by Chris Dowd and Eyad Esmail 
 //  Created on 2/4/2021
 */
+
 #ifndef CANTSTOP_PLAYER_HPP
 #define CANTSTOP_PLAYER_HPP
-#include "Enums.hpp"
-#include <iostream>
-using namespace std;
+#include "tools.hpp"
+#include "enums.hpp"
+
 class Player {
 private:
     string name;
     colorEnum color;
     int score = 0;
-    [[maybe_unused]] int sBoard[3]{0};
+    int sboard[3]{0};
 public:
-    Player() = default;
-    Player(string name, colorEnum color );
+    Player(string name, colorEnum color ): name (name), color (color) {}
     ~Player() {cout <<"Player default constructor called\n"; }   //Destructor
+
     colorEnum getColor(){return color;}
     int getScore() {return score;}
     bool wonColumn(int colNum);

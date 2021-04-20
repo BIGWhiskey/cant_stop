@@ -1,6 +1,10 @@
 /*  ----------------------------------------------------------------------------
 //  Board Header file                          board.hpp
+<<<<<<< HEAD
 //  Created by Chris Dowd and Eyad Esmail
+=======
+//  Created by Chris Dowd and Eyad Esmail 
+>>>>>>> 7dc3b040cf00cc7f236eb1bcdb01508fe881e7d8
 //  Created on 4/19/2021
 */
 #ifndef CANTSTOP_BOARD_HPP

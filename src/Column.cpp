@@ -1,6 +1,6 @@
 /*  ---------------------------------------------------------------------------
 //  Column class for the can't stop project                       column.cpp
-//  Created by Chris Dowd and Eyad Esmail
+//  Created by Chris Dowd and Eyad Esmail 
 */
 
 
@@ -8,7 +8,11 @@
 //startTower function to place a new tower
 bool Column::startTower(Player* p){
     colorEnum pcolor = p -> getColor();
+<<<<<<< HEAD
     if(cState == captured){
+=======
+    if(cState == captured){ 
+>>>>>>> 7dc3b040cf00cc7f236eb1bcdb01508fe881e7d8
         return false;
     }else if (content[white] == 0 && content[pcolor]==0){
         content[white] = 1;
@@ -53,7 +57,7 @@ void Column::bust(){
     content[white] = 0;
 };
 //-----------------------------------------------------------------------------
-// ostream function
+// ostream function 
 void Column::print(ostream& out) const {
     string mycontent;
     for(int j = 1;j<= mySize;j++ ){
@@ -71,4 +75,8 @@ void Column::print(ostream& out) const {
         mycontent.append(squarecontent);
     }
     out << "Column:" << colNum << ", State:" << myStates[cState] << ", Squares:" << mycontent << endl;
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 7dc3b040cf00cc7f236eb1bcdb01508fe881e7d8
