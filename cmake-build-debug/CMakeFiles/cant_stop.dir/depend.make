@@ -15,17 +15,20 @@ CMakeFiles/cant_stop.dir/src/Column.cpp.o: ../src/column.hpp
 CMakeFiles/cant_stop.dir/src/Column.cpp.o: ../src/tools.hpp
 
 CMakeFiles/cant_stop.dir/src/Dice.cpp.o: ../src/Dice.cpp
-CMakeFiles/cant_stop.dir/src/Dice.cpp.o: ../src/Dice.hpp
+CMakeFiles/cant_stop.dir/src/Dice.cpp.o: ../src/dice.hpp
+CMakeFiles/cant_stop.dir/src/Dice.cpp.o: ../src/tools.hpp
 
 CMakeFiles/cant_stop.dir/src/Enums.cpp.o: ../src/Enums.cpp
 CMakeFiles/cant_stop.dir/src/Enums.cpp.o: ../src/Enums.hpp
 
-CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/Column.hpp
-CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/Dice.hpp
 CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/Enums.hpp
 CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/Game.cpp
-CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/Game.hpp
 CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/Player.hpp
+CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/column.hpp
+CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/dice.hpp
+CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/enums.hpp
+CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/game.hpp
+CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/player.hpp
 CMakeFiles/cant_stop.dir/src/Game.cpp.o: ../src/tools.hpp
 
 CMakeFiles/cant_stop.dir/src/Player.cpp.o: ../src/Enums.hpp
@@ -36,6 +39,8 @@ CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/Enums.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/Player.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/column.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/dice.hpp
+CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/enums.hpp
+CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/game.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/player.hpp
 CMakeFiles/cant_stop.dir/src/main.cpp.o: ../src/tools.hpp

@@ -6,16 +6,18 @@
 #include <iostream>
 #include "dice.hpp"
 #include "tools.hpp"
-#include "Enums.hpp"
+#include "enums.hpp"
 #include "player.hpp"
 #include "column.hpp"
+#include "game.hpp"
 #define NUM_DICE 4
 
-void unitDice(){    // dice testing function 
+
+void unitDice(){    // dice testing function
     ofstream dicefile;
     dicefile.open("dicetest.txt", ios_base::app); // file output with append mode
     Dice d(NUM_DICE);
-    if ( dicefile.is_open()){   // checking if file is opened 
+    if ( dicefile.is_open()){   // checking if file is opened
         dicefile << "-------------------------------------------" << endl;
         dicefile << "Dice Created: " << NUM_DICE << endl;
         d.print(dicefile);} // output to file
@@ -93,12 +95,16 @@ void unitColumn(){
     b.stop(x);
     b.print(cout);
 }
+void unitGame(){
+    Game();
+}
 //-----------------------------------------------------------------------------
 int main(int argc, char* argv[]) {
     banner();
-    unitColumn();
+    //unitColumn();
     //unitDice();
     //unitPlayer();
+    unitGame();
     bye();
     return 0;
 }

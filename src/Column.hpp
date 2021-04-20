@@ -21,8 +21,8 @@ private:
     int content[5]{0};
 
 public:
-    Column(int colNum): colNum (colNum){}
-    ~Column() { cout <<"Column default constructor called\n"; }   //Destructor
+    Column(int colNum): colNum (colNum){ cout <<"Column constructor\n";}
+    ~Column() { cout <<"Column destructor\n"; }   //Destructor
 
     State getState(){return cState;}
     void print( ostream& out) const;

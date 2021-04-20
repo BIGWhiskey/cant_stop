@@ -67,3 +67,15 @@ Dice 1 = 5
 Dice 2 = 1
 Dice 3 = 3
 Dice 4 = 4
+-------------------------------------------
+Dice Created: 4
+Dice 1 = 6
+Dice 2 = 4
+Dice 3 = 6
+Dice 4 = 5
+-------------------------------------------
+Dice Created: 4
+Dice 1 = 2
+Dice 2 = 1
+Dice 3 = 6
+Dice 4 = 3

@@ -1,13 +1,15 @@
-//
-// Created by Christopher Dowd on 3/15/21.
-//
-#include "Dice.hpp"
+/*  ----------------------------------------------------------------------------
+//  Dice Class file                          Dice.cpp
+//  Created by Chris Dowd and Eyad Esmail
+//  Created on 1/21/2021
+*/
+
+#include "dice.hpp"
 
 Dice::Dice() {}
 
 //Constructor to create random numbers and call Dice::roll()
 Dice::Dice( int n ) {
-    cout <<n <<" Dice created!\n";
     this->numDice = n;
     diceValue = new int[ n ]; //pseudo-random values
     srand(time( NULL )); //create seed for rand()
@@ -20,7 +22,6 @@ Dice::~Dice() {
 }
 //Roll dice generating pseudo-random values for each roll
 const int* Dice::roll() {
-    cout <<"Dice::roll() called\n";
     for( int j = 1; j <= numDice; j++ ) {
         diceValue[ j ] = rand() % 6 + 1;
     }

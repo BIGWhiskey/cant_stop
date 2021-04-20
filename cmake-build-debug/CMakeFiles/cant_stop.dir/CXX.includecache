@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.cpp
-Board.hpp
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.hpp
-Column.hpp
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
 
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Board.hpp
-Player.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Game.cpp
+game.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/game.hpp
+
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
-Column.hpp
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.hpp
+Enums.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
+iostream
+-
 
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Column.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/column.hpp
 tools.hpp
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
 Enums.hpp
@@ -26,9 +26,39 @@ Enums.hpp
 Player.hpp
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
 
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/dice.hpp
+tools.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
 
-/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Player.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
+
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/game.hpp
+dice.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/dice.hpp
+enums.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
+column.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/column.hpp
+player.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
+
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/main.cpp
+iostream
+-
+dice.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/dice.hpp
+tools.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/tools.hpp
+enums.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/enums.hpp
+player.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
+column.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/column.hpp
+game.hpp
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/game.hpp
+
+/Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/player.hpp
 Enums.hpp
 /Users/christopherdowd/Documents/spr2021/advc++/cant_stop/src/Enums.hpp
 iostream

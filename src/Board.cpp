@@ -5,12 +5,10 @@
 #include "Column.hpp"
 
 Board::Board(){
-    for( int j = 0; j < 13; j++){
-        if( j < 2){ backBone[j] = new Column (0); } else
-        backBone[j] = new Column(j);
-    }
-    for( int j = 0; j < 13; j++){
-        backBone[j] = new Column(j);
+    cout <<"Board Constructor\n";
+   for( int j = 0; j < 13; j++){
+       if( j < 2){ backBone[j] = new Column (0); } else
+      backBone[j] = new Column(j);
     }
 }
 Board::~Board() { delete [] backBone[13]; }
@@ -29,6 +27,12 @@ bool Board::move( int column ){
         return true;
     }
 }
-void Board::stop() {}
-void Board::bust() {}
-void Board::print(ostream &out) const {}
+void Board::stop() {
+
+}
+void Board::bust() {
+
+}
+void Board::print(ostream &out) const {
+    cout <<"Board::Print()\n";
+}

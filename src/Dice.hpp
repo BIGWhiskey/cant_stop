@@ -6,9 +6,9 @@
 
 #ifndef CANTSTOP_DICE_H
 #define CANTSTOP_DICE_H
+
 #pragma once
-#include <iostream>
-using namespace std;
+#include "tools.hpp"
 class Dice {
 private:
     int numDice = 0;
